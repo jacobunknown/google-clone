@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+        body {
+            margin: 0%;
+            height: 100vh;
+        }
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            user-select: none;
+            -webkit-user-drag: none;
+            color: rgb(70, 70, 70);
+        }
+        .top, .bottom {
+            width: 100%;
+            height: 3em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .left, .right {
+            display: flex;
+            margin-left: 1em;
+            margin-right: 1em;
+            gap: 1em;
+            align-items: center;
+        }
+        .mid {
+            display: flex;
+            text-align: center;
+        }
+        a {
+            font-size: 2vmin;
+            text-decoration: none;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .profile-pic {
+            width: 27px;
+            height: 27px;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+        svg {
+            cursor: pointer;
+        }
+        .top-third {
+            width: 100%;
+            height: 42%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .mid-third {
+            width: 100%;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bottom-third {
+            width: 100%;
+            height: 29%;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+        .bottom-third button {
+            outline: none;
+            height: fit-content;
+            padding: 0.5em;
+            border: 1px solid rgba(0,0,0,0);
+            transition: all 0.3s;
+            cursor: pointer;
+            border-radius: 0.3vmax;
+        }
+        .bottom-third button:hover {
+            border: rgb(200, 200, 200) 1px solid;
+        }
+        .logo {
+            width: 23em;
+            height: 8em;
+        }
+        .search-components {
+            width: 50vw;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            border: rgb(223, 223, 223) 1px solid;
+            border-radius: 0.3vmax;
+            transition: 0.2s;
+        }
+        .search-components:hover {
+            border: rgb(200, 200, 200) 1px solid;
+        }
+        .search-components span {
+            height: 100%;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            padding-left: 0.2em;
+            padding-right: 0.2em;
+            cursor: pointer;
+        }
+        input[type="text"] {
+            border: none;
+            outline: none;
+            appearance: none;
+            font-size: 1em;
+            padding-left: 0.5em;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0);
+        }
+        .sign-in {
+            border: none;
+            outline: none;
+            background: #1a73e8;
+            color: white;
+            padding: 0.5em;
+            border-radius: 4px;
+            padding-left: 1em;
+            padding-right: 1em;
+            text-decoration: none;
+        }
+        .sign-in:hover {
+            text-decoration: none;
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="left">
+            <a >About</a>
+            <a >Store</a>
+        </div>
+        <div class="right">
+            <a >Gmail</a>
+            <a >Images</a>
+            <svg class="gb_Ve" focusable="false" viewBox="0 0 24 24" width=19>
+                <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+            </svg>
+            <a class="sign-in">Sign In</a>
+        </div>
+    </div>
+    <div class="top-third">
+        <img  class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">
+    </div>
+    <div class="mid-third">
+        <div class="search-components">
+            <span class="material-icons">search</span>
+            <input type="text" name="" id="" aria-autocomplete="both">
+            <span class="material-icons">mic</span>
+        </div>
+    </div>
+    <div class="bottom-third">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+    </div>
+    <div class="bottom">
+        <div class="left">
+            <a >Advertising</a>
+            <a >Business</a>
+            <a >How Search works</a>
+        </div>
+        <div class="mid">
+        </div>
+        <div class="right">
+            <a >Privacy</a>
+            <a >Terms</a>
+            <a >Settings</a>
+        </div>
+    </div>
+</body>
+</html>
