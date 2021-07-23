@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0%;
+            height: 100vh;
+        }
+        * {
+            color: var(--grey);
+            text-align: center;
+            font-weight: 400;
+        }
+        a {
+            text-decoration: none;
+            color: var(--blue);
+            font-weight: 600;
+            text-align: left;
+        }
+        a, p {
+            padding-left: 6%;
+            width: fit-content; 
+            white-space: nowrap;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .panel {
+            width: 27.5em;
+            height: 31.5em;
+            margin: auto;
+            margin-bottom: 0%;
+            border: rgb(200, 200, 200) 1px solid;
+            border-radius: 0.8vmax;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        .logo {
+            width: 18%;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 16px;
+        }
+        .mid {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        input[type=email] {
+            outline: none;
+            border: rgb(200, 200, 200) 2px solid;
+            width: 80%;
+            padding: 1em;
+            text-align: left;
+            border-radius: 0.4vmax;
+            font-size: 16px;
+            align-self: center;
+            transition: 0.2s;
+        }
+        input[type=email]:focus {
+            border: 2px var(--blue) solid;
+        }
+        .mid2 {
+            gap: 0em;
+        }
+        .bottom {
+            display: flex;
+            justify-content: center;
+            gap: 12.2em;
+            align-items: center;
+        }
+        .bottom * {
+            padding-left: 0%;
+        }
+        .sign-in {
+            border: none;
+            outline: none;
+            background: var(--blue);
+            color: white;
+            padding: 0.7em;
+            border-radius: 4px;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+            text-decoration: none;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+        .sign-in:hover {
+            text-decoration: none;
+            filter: brightness(90%);
+            -webkit-filter: brightness(90%);
+        }
+        .sign-in:active {
+            filter: brightness(80%);
+            -webkit-filter: brightness(80%);
+        }
+        .footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: auto;
+            gap: 2em;
+        }
+        .footer a {
+            color: var(--grey);
+            text-align: center;
+            width: fit-content;
+            padding: 0%;
+            margin-top: 1em;
+            font-weight: 500;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <div class="top">
+            <img  class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">
+            <h1>Sign In</h1>
+            <h2>Use your Google Account</h2>
+        </div>
+        <div class="mid">
+            <input type="email" placeholder="Email or phone">
+            <a href="#">Forgot email?</a>
+        </div>
+        <div class="mid mid2">
+            <p>Not your computer? Use Guest mode to sign in privately.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div class="bottom">
+            <a href="#">Create account</a>
+            <button class="sign-in">Next</button>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#">Help</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+    </div>
+</body>
+</html>

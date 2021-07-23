@@ -1,0 +1,12 @@
+
+:root {
+    --grey: rgb(70,70,70);
+    --blue: #1a73e8;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    -webkit-user-drag: none;
+    color: var(--grey);
+}
