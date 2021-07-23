@@ -1,3 +1,3 @@
 # [not-google](https://jacobunknown.github.io/google-clone/)
 
-A responsive Google clone.
+A (kind of) responsive Google clone.
