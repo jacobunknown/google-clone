@@ -5,8 +5,49 @@
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     user-select: none;
     -webkit-user-drag: none;
     color: var(--grey);
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    outline: none;
+    height: fit-content;
+    padding: 0.5em;
+    border: 1px solid rgba(0,0,0,0);
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 0.3vmax;
+}
+.btn:hover {
+    border: rgb(200, 200, 200) 1px solid;
+}
+
+.btn-primary {
+    border: none;
+    outline: none;
+    background: var(--blue);
+    color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.btn-primary:hover {
+    text-decoration: none;
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+}
+.btn-primary:active {
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
 }

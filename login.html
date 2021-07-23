@@ -22,6 +22,9 @@
             font-weight: 600;
             text-align: left;
         }
+        .link:hover {
+            text-decoration: underline;
+        }
         a, p {
             padding-left: 6%;
             width: fit-content; 
@@ -32,8 +35,8 @@
             flex-direction: column;
         }
         .panel {
-            width: 27.5em;
-            height: 31.5em;
+            width: 65vh;
+            height: 70vh;
             margin: auto;
             margin-bottom: 0%;
             border: rgb(200, 200, 200) 1px solid;
@@ -79,35 +82,16 @@
         }
         .bottom {
             display: flex;
-            justify-content: center;
-            gap: 12.2em;
+            justify-content: space-between;
             align-items: center;
+            width: 100%;
         }
-        .bottom * {
-            padding-left: 0%;
-        }
-        .sign-in {
-            border: none;
-            outline: none;
-            background: var(--blue);
-            color: white;
-            padding: 0.7em;
-            border-radius: 4px;
-            padding-left: 1.5em;
-            padding-right: 1.5em;
-            text-decoration: none;
-            font-size: 15px;
-            cursor: pointer;
-            transition: 0.1s;
-        }
-        .sign-in:hover {
-            text-decoration: none;
-            filter: brightness(90%);
-            -webkit-filter: brightness(90%);
-        }
-        .sign-in:active {
-            filter: brightness(80%);
-            -webkit-filter: brightness(80%);
+        .bottom .btn-primary {
+            margin-right: 1em;
+            padding: 0.6em;
+            padding-left: 1em;
+            padding-right: 1em;
+            font-size: 1em;
         }
         .footer {
             display: flex;
@@ -146,13 +130,13 @@
         </div>
         <div class="bottom">
             <a href="#">Create account</a>
-            <button class="sign-in">Next</button>
+            <button class="btn-primary">Next</button>
         </div>
     </div>
     <div class="footer">
-        <a href="#">Help</a>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
+        <a href="#" class="link">Help</a>
+        <a href="#" class="link">Privacy</a>
+        <a href="#" class="link">Terms</a>
     </div>
 </body>
 </html>
